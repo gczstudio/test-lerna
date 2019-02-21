@@ -10,7 +10,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
     "lerna": "^3.13.0",
