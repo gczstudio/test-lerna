@@ -41,6 +41,22 @@ program
     console.log();
   });
 
+program
+  .command('dev [entry]')
+  .description('serve project in development mode with zero config')
+  .option('-o, --open', 'Open browser')
+  .action((entry, cmd) => {
+    require('../lib/service').serve(entry, cleanArgs(cmd));
+  });
+
+program
+  .command('build [entry]')
+  .option('-d, --dest <dir>', 'output directory (default: dist)')
+  .option('-m, --mode <env>', 'build mode env (default: production)')
+  .description('build project in production mode with zero config')
+  .action((entry, cmd) => {
+    require('../lib/service').build(entry, cleanArgs(cmd));
+  });
 
 program.arguments('<command>').action(cmd => {
   program.outputHelp();
