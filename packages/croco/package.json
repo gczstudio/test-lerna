@@ -1,16 +1,16 @@
 {
-  "name": "@smoker/cli",
-  "version": "1.0.2-alpha.0",
+  "name": "@croco/cli",
+  "version": "1.1.0",
   "description": "Command line interface for FE development",
   "bin": {
-    "smoker": "bin/smoker"
+    "croco": "bin/croco"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "http://git.flyui.cn/smoker/smoker-cli.git"
+    "url": "http://git.flyui.cn/croco/croco-cli.git"
   },
   "keywords": [
     "vue",
@@ -21,7 +21,7 @@
   "author": "@stc",
   "license": "ISC",
   "dependencies": {
-    "@smoker/cli-service": "^1.3.1",
+    "@croco/cli-service": "^1.3.1",
     "async": "^2.6.0",
     "chalk": "^2.3.2",
     "commander": "^2.15.1",
